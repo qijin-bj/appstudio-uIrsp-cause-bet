@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-dpxg
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-lxkn-tenant/appstudio/devfile-sample-python-basic-dpxg@sha256:569cb3fd34d5d3590d654832a2147320c8a5db4c6bab56d4eb44b5a1e703365c
+        name: my-python
+        resources: {}
+status: {}
